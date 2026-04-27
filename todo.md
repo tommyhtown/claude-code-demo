@@ -1,4 +1,4 @@
-# AI Educational Website — Todo
+# AI Educational Website — Todo (v2: NorthStar Rebrand)
 
 ## Plan
 
@@ -18,6 +18,19 @@
 - [x] Verify mobile responsiveness
 - [x] Verify scroll animations (nav shrink, section fade-in)
 - [x] Address any user-requested revisions — none requested
+
+---
+
+## v2 Plan — NorthStar Rebrand
+
+- [ ] Copy `NorthStar.jpg` from Downloads into the project folder as `assets/logo.jpg`
+- [ ] Update color palette: replace mint green (`#6EE7B7`) with NorthStar navy (`#1B3A6B`) and gold accent (`#C8A84B`)
+- [ ] Replace text logo "Synapse." in Nav with `<img>` of NorthStar logo
+- [ ] Replace text logo "Synapse." in Footer with `<img>` of NorthStar logo
+- [ ] Update site `<title>` to "NorthStar — AI Education"
+- [ ] Update Hero brand label and headline to reflect NorthStar identity
+- [ ] Update footer tagline to "Care, Comfort and Plan"
+- [ ] Commit and push changes to GitHub
 
 ---
 

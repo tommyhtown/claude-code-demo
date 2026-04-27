@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Synapse — AI Education</title>
+  <title>NorthStar — AI Education</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -14,8 +14,8 @@
       --bg:       #0A0A0A;
       --surface:  #111111;
       --border:   #1E1E1E;
-      --accent:   #6EE7B7;
-      --accent2:  #34D399;
+      --accent:   #C8A84B;
+      --accent2:  #B8943A;
       --text:     #F5F5F5;
       --muted:    #666666;
       --font:     'Inter', system-ui, sans-serif;
@@ -52,13 +52,15 @@
     }
 
     .nav-logo {
-      font-size: 1.1rem;
-      font-weight: 800;
-      letter-spacing: -.02em;
-      color: var(--text);
+      display: inline-flex;
+      align-items: center;
       text-decoration: none;
     }
-    .nav-logo span { color: var(--accent); }
+    .nav-logo img {
+      height: 40px;
+      width: auto;
+      filter: brightness(0) invert(1);
+    }
 
     .nav-links {
       display: flex;
@@ -465,7 +467,8 @@
       gap: 60px;
       margin-bottom: 60px;
     }
-    .footer-brand .nav-logo { font-size: 1.2rem; display: block; margin-bottom: 16px; }
+    .footer-brand .nav-logo { display: inline-flex; margin-bottom: 16px; }
+    .footer-brand .nav-logo img { height: 36px; }
     .footer-tagline { font-size: .85rem; color: var(--muted); line-height: 1.7; max-width: 240px; }
 
     .footer-col h4 {
@@ -527,7 +530,7 @@
 
   <!-- NAV -->
   <nav id="nav">
-    <a href="#" class="nav-logo">Synapse<span>.</span></a>
+    <a href="#" class="nav-logo"><img src="assets/logo.jpg" alt="NorthStar" /></a>
     <ul class="nav-links">
       <li><a href="#courses">Courses</a></li>
       <li><a href="#how">How It Works</a></li>
@@ -538,7 +541,7 @@
   <!-- HERO -->
   <header class="hero">
     <div class="hero-copy">
-      <div class="hero-label">AI-Powered Learning</div>
+      <div class="hero-label">NorthStar AI Learning</div>
       <h1>The Future<br>of Learning Is<br><em>Already Here.</em></h1>
       <p class="hero-sub">Master artificial intelligence from the ground up. Structured tracks, expert-designed curricula, and real-world projects — built for the way your brain actually works.</p>
       <div class="hero-ctas">
@@ -711,8 +714,8 @@
   <footer class="reveal">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="#" class="nav-logo">Synapse<span>.</span></a>
-        <p class="footer-tagline">Rigorous AI education for the people building the next decade of technology.</p>
+        <a href="#" class="nav-logo"><img src="assets/logo.jpg" alt="NorthStar" /></a>
+        <p class="footer-tagline">Care, Comfort and Plan — AI education built around you.</p>
       </div>
       <div class="footer-col">
         <h4>Platform</h4>
@@ -743,7 +746,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copy">&copy; 2026 Synapse Learning, Inc. All rights reserved.</span>
+      <span class="footer-copy">&copy; 2026 NorthStar. All rights reserved.</span>
       <span class="footer-copy">Designed with intent.</span>
     </div>
   </footer>
