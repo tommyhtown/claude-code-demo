@@ -2,14 +2,15 @@
 
 ## v3 Plan — Visual Improvements
 
-- [ ] Add rounded corners to cards and buttons
-- [ ] Add box shadows for depth (hover glow on course cards, ambient on testimonials)
-- [ ] Add gradient accent to hero headline "Already Here."
-- [ ] Add subtle section background alternation for visual rhythm
-- [ ] Improve button hover states (gold glow on primary, fill on ghost)
-- [ ] Add gradient overlay on course card images
-- [ ] Enlarge and reposition testimonial quote mark
-- [ ] Commit and push to GitHub
+- [x] Add rounded corners to cards and buttons (hero card 16px, course/testi cards 12px, buttons 6px)
+- [x] Add box shadows for depth (hover glow on course cards, ambient on testimonials, hero float)
+- [x] Add gradient accent to hero headline "Already Here." (gold → light gold via background-clip: text)
+- [x] Add subtle section background alternation (How It Works → #0E0E0E)
+- [x] Improve button hover states (gold glow shadow on primary, semi-transparent fill on ghost)
+- [x] Add gradient overlay on course card images (::after linear-gradient to top)
+- [x] Enlarge and reposition testimonial quote mark (4rem, display:block, 0.7 opacity)
+- [x] Fix remaining "Synapse" brand name in testimonial copy → "NorthStar"
+- [x] Commit and push to GitHub
 
 ---
 
