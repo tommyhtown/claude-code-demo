@@ -1,4 +1,17 @@
-# AI Educational Website — Todo (v2: NorthStar Rebrand)
+# AI Educational Website — Todo (v3: Visual Polish)
+
+## v3 Plan — Visual Improvements
+
+- [ ] Add rounded corners to cards and buttons
+- [ ] Add box shadows for depth (hover glow on course cards, ambient on testimonials)
+- [ ] Add gradient accent to hero headline "Already Here."
+- [ ] Add subtle section background alternation for visual rhythm
+- [ ] Improve button hover states (gold glow on primary, fill on ghost)
+- [ ] Add gradient overlay on course card images
+- [ ] Enlarge and reposition testimonial quote mark
+- [ ] Commit and push to GitHub
+
+---
 
 ## Plan
 

@@ -117,7 +117,10 @@
     }
     .hero h1 em {
       font-style: normal;
-      color: var(--accent);
+      background: linear-gradient(135deg, #C8A84B 0%, #F0D080 60%, #C8A84B 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
     }
 
     .hero-sub {
@@ -148,9 +151,10 @@
       text-decoration: none;
       border: none;
       cursor: pointer;
-      transition: background .2s, transform .15s;
+      border-radius: 6px;
+      transition: background .2s, transform .15s, box-shadow .2s;
     }
-    .btn-primary:hover { background: var(--accent2); transform: translateY(-2px); }
+    .btn-primary:hover { background: var(--accent2); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,168,75,.35); }
 
     .btn-ghost {
       display: inline-flex;
@@ -166,9 +170,10 @@
       text-decoration: none;
       border: 1px solid var(--border);
       cursor: pointer;
-      transition: border-color .2s, color .2s;
+      border-radius: 6px;
+      transition: border-color .2s, color .2s, background .2s;
     }
-    .btn-ghost:hover { border-color: var(--text); }
+    .btn-ghost:hover { border-color: var(--text); background: rgba(255,255,255,.05); }
 
     /* hero visual */
     .hero-visual {
@@ -183,6 +188,7 @@
       border: 1px solid var(--border);
       background: var(--surface);
       overflow: hidden;
+      border-radius: 16px;
     }
     .hero-card img {
       width: 100%;
@@ -213,10 +219,12 @@
       bottom: -24px; left: -40px;
       background: var(--surface);
       border: 1px solid var(--border);
+      border-radius: 10px;
       padding: 16px 22px;
       display: flex;
       align-items: center;
       gap: 14px;
+      box-shadow: 0 8px 32px rgba(0,0,0,.6);
     }
     .hero-float-num {
       font-size: 1.8rem;
@@ -293,24 +301,33 @@
     .courses-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
+      gap: 24px;
     }
     .course-card {
       background: var(--surface);
       display: flex;
       flex-direction: column;
-      transition: background .2s;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
       text-decoration: none;
       color: inherit;
+      transition: background .2s, box-shadow .3s, transform .2s;
     }
-    .course-card:hover { background: #161616; }
+    .course-card:hover { background: #161616; box-shadow: 0 20px 60px rgba(0,0,0,.5); transform: translateY(-4px); }
     .course-card:hover .course-img img { transform: scale(1.04); }
 
     .course-img {
+      position: relative;
       overflow: hidden;
       aspect-ratio: 16/9;
+    }
+    .course-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,.6), transparent 60%);
+      pointer-events: none;
     }
     .course-img img {
       width: 100%;
@@ -361,7 +378,7 @@
     .course-card:hover .course-link { color: var(--accent); gap: 10px; }
 
     /* ── HOW IT WORKS ─────────────────────── */
-    .how { border-top: 1px solid var(--border); }
+    .how { background: #0E0E0E; border-top: 1px solid var(--border); }
     .steps {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -403,7 +420,9 @@
     .testi-card {
       background: var(--surface);
       border: 1px solid var(--border);
+      border-radius: 12px;
       padding: 44px;
+      box-shadow: 0 4px 24px rgba(0,0,0,.3);
     }
     .testi-quote {
       font-size: 1rem;
@@ -412,7 +431,16 @@
       margin-bottom: 32px;
       font-style: italic;
     }
-    .testi-quote::before { content: '\201C'; color: var(--accent); font-size: 1.4rem; font-style: normal; }
+    .testi-quote::before {
+      content: '\201C';
+      display: block;
+      color: var(--accent);
+      font-size: 4rem;
+      font-style: normal;
+      line-height: 1;
+      margin-bottom: 8px;
+      opacity: .7;
+    }
     .testi-author { display: flex; align-items: center; gap: 16px; }
     .testi-avatar {
       width: 44px; height: 44px;
@@ -454,6 +482,7 @@
       text-decoration: none;
       border: none;
       cursor: pointer;
+      border-radius: 6px;
       transition: background .2s, transform .15s;
     }
     .btn-dark:hover { background: #1A1A1A; transform: translateY(-2px); }
@@ -660,7 +689,7 @@
     <div class="testi-grid">
 
       <div class="testi-card">
-        <p class="testi-quote">Synapse is the only platform that made transformer architecture click for me. Within eight weeks I shipped my first production NLP feature at work.</p>
+        <p class="testi-quote">NorthStar is the only platform that made transformer architecture click for me. Within eight weeks I shipped my first production NLP feature at work.</p>
         <div class="testi-author">
           <div class="testi-avatar"><img src="https://picsum.photos/seed/testi-1/88/88" alt="Mia Chen" /></div>
           <div>
@@ -682,7 +711,7 @@
       </div>
 
       <div class="testi-card">
-        <p class="testi-quote">I tried six other platforms before Synapse. The projects here are the difference between memorizing theory and actually understanding what you're building.</p>
+        <p class="testi-quote">I tried six other platforms before NorthStar. The projects here are the difference between memorizing theory and actually understanding what you're building.</p>
         <div class="testi-author">
           <div class="testi-avatar"><img src="https://picsum.photos/seed/testi-3/88/88" alt="Priya Nair" /></div>
           <div>
@@ -693,7 +722,7 @@
       </div>
 
       <div class="testi-card">
-        <p class="testi-quote">As a self-taught developer, I needed structure without hand-holding. Synapse nailed the balance. My GitHub now tells a story I'm proud of.</p>
+        <p class="testi-quote">As a self-taught developer, I needed structure without hand-holding. NorthStar nailed the balance. My GitHub now tells a story I'm proud of.</p>
         <div class="testi-author">
           <div class="testi-avatar"><img src="https://picsum.photos/seed/testi-4/88/88" alt="Lucas Mendes" /></div>
           <div>
