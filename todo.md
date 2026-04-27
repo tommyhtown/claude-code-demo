@@ -23,27 +23,19 @@
 
 ## v2 Plan — NorthStar Rebrand
 
-- [ ] Copy `NorthStar.jpg` from Downloads into the project folder as `assets/logo.jpg`
-- [ ] Update color palette: replace mint green (`#6EE7B7`) with NorthStar navy (`#1B3A6B`) and gold accent (`#C8A84B`)
-- [ ] Replace text logo "Synapse." in Nav with `<img>` of NorthStar logo
-- [ ] Replace text logo "Synapse." in Footer with `<img>` of NorthStar logo
-- [ ] Update site `<title>` to "NorthStar — AI Education"
-- [ ] Update Hero brand label and headline to reflect NorthStar identity
-- [ ] Update footer tagline to "Care, Comfort and Plan"
-- [ ] Commit and push changes to GitHub
+- [x] Copy `NorthStar.jpg` from Downloads into the project folder as `assets/logo.jpg`
+- [x] Update color palette: replace mint green (`#6EE7B7`) with gold accent (`#C8A84B`) and darker gold hover (`#B8943A`)
+- [x] Replace text logo "Synapse." in Nav with `<img>` of NorthStar logo (white-inverted via CSS filter)
+- [x] Replace text logo "Synapse." in Footer with `<img>` of NorthStar logo
+- [x] Update site `<title>` to "NorthStar — AI Education"
+- [x] Update Hero brand label to "NorthStar AI Learning"
+- [x] Update footer tagline to "Care, Comfort and Plan — AI education built around you."
+- [x] Commit and push changes to GitHub
 
 ---
 
 ## Review
 
-**What was built:** A single-file AI educational website (`index.html`) with no external dependencies beyond Google Fonts and picsum.photos placeholder images.
+**v1 (Initial build):** Single-file AI educational website with 8 sections — Nav, Hero, Stats, Courses, How It Works, Testimonials, CTA Banner, Footer. Dark theme, mint accent (`#6EE7B7`), Inter typeface, IntersectionObserver animations, CSS Grid responsive layout. No frameworks.
 
-**Sections delivered:** Nav, Hero, Stats bar, Featured Courses (3-card grid), How It Works (3-step), Testimonials (2×2 grid), CTA Banner, Footer.
-
-**Design approach:** Dark-mode first (`#0A0A0A` background), mint green accent (`#6EE7B7`), Inter typeface, hairline borders, generous whitespace — minimal agency aesthetic throughout.
-
-**Interactions:** Sticky nav shrinks on scroll via a CSS class toggle; all sections fade in via IntersectionObserver. Both are lightweight, no-framework implementations.
-
-**Responsiveness:** CSS Grid `auto-fit / minmax` handles all layout reflow. Tested breakpoint at 900px — all columns stack cleanly.
-
-**Changes kept minimal:** No frameworks, no build step, no unnecessary abstractions. One file, open and run.
+**v2 (NorthStar rebrand):** Added `assets/logo.jpg`; applied CSS `filter: brightness(0) invert(1)` to render it white on the dark background. Replaced mint palette with NorthStar gold (`#C8A84B` / `#B8943A`). Updated page title, hero label, footer tagline, and copyright to NorthStar branding. All changes minimal — no structural rewrites. Pushed to https://github.com/tommyhtown/claude-code-demo.
